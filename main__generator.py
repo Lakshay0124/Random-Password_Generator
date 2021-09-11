@@ -17,12 +17,13 @@ xy2=random.choice(b3)
 xy3=random.choice(b3)
 gg=(ty+str(zy1)+xy1+ty2+str(zy)+xy2+ty3+ty4+xy3+str(zy2)+ty5+xy)
 print(f"Your Password is - {gg}")
-hj=input("Do you want to save that password yes or no ")
+hj=input("Do you want to save that password yes or no -  ")
 if (hj=="yes"):
-    hj1=input("For What You Want To Save - ")
+    hj1=input("For What Wesbite You Want To Save - ")
+    hj2=input("What Is The Username - ")
     with open("saved_password.txt","a") as f:
         f.write(f"""        
-{hj1}      {gg}                """)
+{hj2}               {hj1}              {gg}                """)
 else:
     print("Okay")  
 
